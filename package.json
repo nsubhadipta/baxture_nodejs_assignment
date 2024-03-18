@@ -1,0 +1,24 @@
+{
+  "name": "baxture_nodejs_assignment",
+  "version": "1.0.0",
+  "description": "Simple CRUD API using in-memory database underneath",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/nsubhadipta/baxture_nodejs_assignment.git"
+  },
+  "keywords": [
+    "Node Js",
+    "Js",
+    "Typescript"
+  ],
+  "author": "Subhadipta Nayak",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/nsubhadipta/baxture_nodejs_assignment/issues"
+  },
+  "homepage": "https://github.com/nsubhadipta/baxture_nodejs_assignment#readme"
+}
