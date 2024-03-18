@@ -6,13 +6,14 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
+  "type": "module",
   "repository": {
     "type": "git",
     "url": "git+https://github.com/nsubhadipta/baxture_nodejs_assignment.git"
   },
   "keywords": [
     "Node Js",
-    "Js",
+    "Express Js",
     "Typescript"
   ],
   "author": "Subhadipta Nayak",
