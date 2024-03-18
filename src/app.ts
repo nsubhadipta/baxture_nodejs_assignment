@@ -13,7 +13,18 @@ app.use(express.urlencoded({ extended: true }));
 
 app.use(express.json());
 
+app.use('/api', router);
 
+//Dynamic Route Configuration
+const routesPath = path.join(__dirname, '/routes');
+const routeFiles = fs.readdirSync(routesPath);
+
+routeFiles.forEach((routeFile) => {
+  if (routeFile !== 'index.ts' && routeFile.endsWith('.ts')) {
+    const routeModule = require(path.join(routesPath, routeFile)).default;
+    routeModule(router);
+  }
+});
 
 app.get("/api/health", async (req, res) => {
   try {
