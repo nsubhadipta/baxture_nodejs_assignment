@@ -10,7 +10,7 @@ const userSchema = {
   userEdit: Joi.object({
     username: Joi.string().max(50).required(),
     age: Joi.number().integer().positive().required(),
-    hobbies: Joi.array().items(Joi.string()).default([]),
+    hobbies: Joi.array().items(Joi.string()).required(),
   }),
 };
 
