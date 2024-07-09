@@ -28,7 +28,7 @@ routeFiles.forEach((routeFile) => {
 
 app.get("/api/health", async (req, res) => {
   try {
-    res.json({ status: 1, message: "CRUD API Backend server is Running!" });
+    res.json({ status: 1, message: "CRUD API Backend server is Running! 👋" });
   } catch (error) {
     res.status(403).json({ 'error': 'error occured', message: error });
   }
